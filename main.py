@@ -18,7 +18,7 @@ def login():
         print('由表單傳送過來的')
         print(f"email:{request.form['email']}")
         print(f"password:{request.form['password']}")
-        wb = load_workbook('static/others/login.xlsx')
+        wb = load_workbook('static/others/login.xls')
         login_sheet = wb['工作表1']
         for row in login_sheet.iter_rows():
             print(row[0].value)
